@@ -1,0 +1,454 @@
+:root{
+    --bg: linear-gradient(#1e3f0bee, transparent),
+    url(images/background.png);
+    --bg-panel: #8bcf70;
+    --color-headings:#ffffff;
+    --color-text: #6aa055;
+    --darkimg:url(images/luaicon.png); 
+}
+
+.dark-mode:root {
+    --bg: linear-gradient(#000000ee, transparent),
+    url(images/background.png);
+    --bg-panel: #7e7e7e;
+    --color-headings:#616060;
+    --color-text: #1f1e1e;
+    --darkimg: url(images/solicon.png);
+}
+
+
+body{
+    font-size:16px;
+  }
+  h1{
+    font-size:2em;
+  }
+  p{
+    font-size:1em;
+  }
+  
+
+
+
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+.containernav {
+    width: 100%;
+    height: 100vh;
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    transform: translate3d(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+.text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.text-box a{
+   text-decoration: none;
+}
+
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+
+
+.text-box h1 {
+    font-size: 80px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    background-clip:border-box;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.text-box .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.link-box{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+
+@media (max-width: 420px)
+{
+      .text-box h1 {
+        font-size: 45px;
+    }
+
+    .text-box p {
+        font-size: 20px;
+    }
+
+    .text-box h3 {
+        font-size: 30px;
+    }
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 5px 10px;
+    }
+
+}
+
+
+
+
+
+.social-icons {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons img {
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+
+.imgporti{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.containersobre{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 2.5rem 1rem;
+   
+    
+}
+#sobre{
+    background-color: var(--bg-panel);
+    
+}
+
+.imgsobre{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    
+}
+
+.imgsobre img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(100, 100, 100);
+    
+}
+
+
+@media (max-width: 420px)
+{
+
+    .imgsobre img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }
+  
+    .containersobre{
+        
+        display: block;
+    }
+}
+
+.containertec{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+#tecnologias{
+    background-color: var(--color-headings);
+}
+
+.cards{
+    border-radius: 10px 10px 0 10px;
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+    width: 250px;
+    z-index: 2;
+    border: black solid 5px;
+}
+
+article {
+    display: block;
+}
+
+article figure{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.iconcard{
+    
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 15px 15px 0 15px;
+    height: 60px;
+    width: 60px;
+}
+
+.titucard{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+article h2{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.textocard{
+    font-weight: 400;
+}
+
+article p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.iconsimgtec{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerfoot{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardsfoot{
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+    width: 250px;
+    z-index: 2;
+    
+}
+
+article {
+    display: block;
+}
+
+
+.titucardfoot{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+.cardsfoot a{
+    text-decoration: none;
+   color: black;
+}
+
+.titucardfoot a{
+   text-decoration: none;
+   color: black;
+}
+
+
+article h2{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textocardfoot{
+    font-weight: 400;
+}
+
+article p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+.footer{
+    background-color: var(--bg-panel);
+    
+}
+
+.copyfoot{
+    background-color: var(--color-text);
+    color: white;
+    text-align: center;
+}
+
+
+.bntvol img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width:72px;
+    height: 60px;
+    background-image: var(--darkimg);
+    background-size: cover;
+    background-position: center;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+
+

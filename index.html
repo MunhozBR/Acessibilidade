@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+    
+</head>
+
+<body>
+    
+    
+    <main id="home" class="containernav">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a accesskey="3" href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
+                    
+                    
+                <a class="bntvol" href="#" onclick="diminuir()"><img src="images/minus.png" alt="Diminuir texto"></a> |
+                <a class="bntvol" href="#" onclick="aumentar()"><img src="images/plus.png" alt="Aumentar texto"></a>
+                
+            </ul>
+            
+            <label for="switch">
+                <input type="checkbox"  id="switch"> Dark Mode
+            </label>
+            <script src="scripts.js"></script>
+                    
+                
+            
+        </nav>
+        <div class="text-box">
+            <p>EU SOU O</p>
+            <a accesskey="1" href="#home"><h1>Gabriel Munhoz</h1></a>
+            <h3>E EU AMO FAZER WEBSITES!</h3>
+
+            <div class="row">
+                <a class="link-box" accesskey="2" href="#sobre">Dê uma olhada no meu Portfolio</a>
+                <a class="link-box" accesskey="4" href="#contato">Se conecte comigo <span>&#x2192;</span></a>
+                <span>Você pode descobrir mais sobre <br> meus trabalhos aqui.</span>
+            </div>
+            
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/gabriel.munhoz.54966/"><img src="images/face.png" alt="face icon"></a>
+            <a href="https://www.instagram.com/garmunhoz/"><img src="images/instagram.png" alt=" insta icon"></a>
+        </div>
+        
+
+    </main>
+    <section id="sobre" class="sectionsobre">
+        <div class="containersobre">
+            <figure class="imgsobre">
+                <img src="images/munhoz.png" alt="Gabriel" title="Gabriel">
+            </figure>
+            <div><h1>Sobre</h1>
+                <br>
+                <h2>Prazer! Eu sou o Gabriel Regateri Munhoz moro em Taquaritinga-SP. </h2>
+                <br>
+                <h3> Um universitário louco por codigos, Designer e programação. E quero sempre buscar melhorar em minha carreira de desenvolvedor web. </h3>
+            </div>
+           
+        </div>
+    </section>
+
+
+
+
+    <section id="tecnologias" class="sectiontecno">
+        <h1 style="text-align: center;">Tecnologias Dominantes</h1>
+        <div class="containertec">
+            <article class="cards">
+                <figure class="iconcard"><img class="iconsimgtec" src="images/htmlicon.png" alt="html icone"></figure>
+                <h2 class="titucard">Html</h2>
+                <p class="textocard">é uma linguagem que os usuários podem criar parágrafos e links usando tags e etc.</p>
+            </article>
+
+            <article class="cards">
+                <figure class="iconcard"><img class="iconsimgtec" src="images/cssicon.png" alt="Css icone"></figure>
+                <h2 class="titucard">CSS</h2>
+                <p class="textocard">CSS ele funciona como uma camada de personalização ao conteúdo visível.</p>
+            </article>
+
+            <article class="cards">
+                <figure class="iconcard"><img class="iconsimgtec" src="images/bootstrapicon.png" alt="BOOTSTRAP icone"></figure>
+                <h2 class="titucard">Bootstrap</h2>
+                <p class="textocard">Bootstrap é um framework front-end usado para estruturar web e sites mobile-first.</p>
+            </article>
+            
+            <article class="cards">
+                <figure class="iconcard"><img class="iconsimgtec" src="images/javascripticon.png" alt="javascript icone"></figure>
+                <h2 class="titucard">JavaScript</h2>
+                <p class="textocard">JavaScript é uma linguagem que permite a implementação de itens complexos em páginas web</p>
+            </article>
+            
+            <article class="cards">
+                <figure class="iconcard"><img class="iconsimgtec" src="images/vueicon.png" alt="VUE icone"></figure>
+                <h2 class="titucard">VUE</h2>
+                <p class="textocard">Vue JS é um framework Javascript open source é a ferramenta mais completa para lidar com grandes UIs.</p>
+            </article>
+            
+            <article class="cards">
+                <figure class="iconcard"><img class="iconsimgtec" src="images/nuxticon.png" alt="Nuxt icone"></figure>
+                <h2 class="titucard">Nuxt</h2>
+                <p class="textocard">Nuxt.js é uma estrutura de aplicativo da web de código aberto, que é uma estrutura de propósito semelhante</p>
+            </article>
+        </div>
+
+    </section>
+<footer id="contato">
+    
+    <div class="footer">
+        <h1 style="text-align: center;">Contato</h1>
+
+    <div class="containerfoot">
+            <article class="cardsfoot">
+                <h2 class="titucardfoot">Telefone</h2>
+                <p class="textocardfoot">+55 (16) 98811-2487</p>
+            </article>
+            <article class="cardsfoot">
+                <h2 class="titucardfoot">Email</h2>
+                <p class="textocardfoot">Gabrielrmunhoz@gmail.com</p>
+            </article>
+
+            <article class="cardsfoot">
+                <h2 class="titucardfoot">Localização</h2>
+                <p class="textocardfoot">Taquaritinga-SP/Brasil</p>
+            </article>
+
+            <article class="cardsfoot">
+                <h2 class="titucardfoot">GitHub</h2>
+                <a href="https://github.com/MunhozBR">https://github.com/MunhozBR</a>
+            </article>
+    </div>    
+    
+</div>  
+<div class="copyfoot"><p class="fs">© Copyright by Munhoz 2021</p></div>  
+</footer>
+   
+</body>
+
+</html>
